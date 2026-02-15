@@ -15,13 +15,6 @@
       "email": "Sahil@gmail.com"
     },
     {
-      "id": "3",
-      "firstName": "Amit",
-      "lastName": "Verma",
-      "phone": "9988776655",
-      "email": "amit@gmail.com"
-    },
-    {
       "id": "4",
       "firstName": "Sana",
       "lastName": "Khan",
@@ -50,11 +43,11 @@
       "email": "benten@gmail.com"
     },
     {
-      "id": "84b7",
-      "firstName": "abc",
-      "lastName": "efg",
-      "phone": "464646540",
-      "email": "ab@gmail.com"
+      "id": "b6d6",
+      "firstName": "Rehan",
+      "lastName": "Shaikh",
+      "phone": "5689120269",
+      "email": "rehan@gmail.com"
     }
   ]
 }
