@@ -1,5 +1,60 @@
 {
-    "users": [
-        
-    ]
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Astagees",
+      "lastName": "Ansari",
+      "phone": "9876543210",
+      "email": "astagees@gmail.com"
+    },
+    {
+      "id": "2",
+      "firstName": "Sahil",
+      "lastName": "Khan",
+      "phone": "9123456780",
+      "email": "Sahil@gmail.com"
+    },
+    {
+      "id": "3",
+      "firstName": "Amit",
+      "lastName": "Verma",
+      "phone": "9988776655",
+      "email": "amit@gmail.com"
+    },
+    {
+      "id": "4",
+      "firstName": "Sana",
+      "lastName": "Khan",
+      "phone": "9871234567",
+      "email": "sana@gmail.com"
+    },
+    {
+      "id": "5",
+      "firstName": "Imran",
+      "lastName": "Ali",
+      "phone": "9090909090",
+      "email": "imran@gmail.com"
+    },
+    {
+      "id": "1fb1",
+      "firstName": "Astagees",
+      "lastName": "Ansari",
+      "phone": "9067864617",
+      "email": "astageesansari92@gmail.com"
+    },
+    {
+      "id": "3830",
+      "firstName": "Ben",
+      "lastName": "Ten",
+      "phone": "5564896890",
+      "email": "benten@gmail.com"
+    },
+    {
+      "id": "84b7",
+      "firstName": "abc",
+      "lastName": "efg",
+      "phone": "464646540",
+      "email": "ab@gmail.com"
+    }
+  ]
 }
