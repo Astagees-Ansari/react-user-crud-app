@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import AddUser from "./AddUsers";
 import { Table } from "react-bootstrap";
 import EditUsers from "./EditUsers";
+import DeleteUser from "./DeleteUsers";
 // import AddUser from "./AddUser";
 
 const Index = () => {
@@ -45,6 +46,35 @@ const Index = () => {
             console.log(err);
         }
     };
+
+
+    //State For Delete
+    const [showDeleteUser, setShowDeleteUser] = useState(false);
+    const [userToDelete, setUserToDelete] = useState(null);
+
+    const handleOpenDelete = (user) => {
+        setUserToDelete(user);
+        setShowDeleteUser(true);
+    };
+
+    const handleCloseDelete = () => {
+        setShowDeleteUser(false);
+        setUserToDelete(null);
+    };
+
+    const handleDeleteUser = async (id) => {
+        try {
+            await fetch(`http://localhost:3000/users/${id}`, {
+                method: "DELETE"
+            });
+
+            fetchUsers();
+        } catch (error) {
+            console.log("Delete error:", error);
+        }
+    };
+
+
 
 
 
@@ -102,6 +132,14 @@ const Index = () => {
                 onUpdate={handleUpdateUser}
             />
 
+            <DeleteUser
+                show={showDeleteUser}
+                handleClose={handleCloseDelete}
+                selectedUser={userToDelete}
+                onDelete={handleDeleteUser}
+            />
+
+
 
             <Table striped bordered hover>
                 <thead>
@@ -136,6 +174,7 @@ const Index = () => {
                                     <Button
                                         variant="danger"
                                         size="sm"
+                                        onClick={() => handleOpenDelete(user)}
                                     >
                                         Delete
                                     </Button>
