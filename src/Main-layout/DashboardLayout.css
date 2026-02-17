@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Wrapper */
+.dashboard-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f3f5;
+}
+
+/* Header (Sticky, fixed nahi) */
+.dashboard-wrapper header {
+  position: fixed;   /* ⭐ Fixed nahi */
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Body */
+.dashboard-body {
+  flex: 1;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #ffffff;
+  border-right: 1px solid #e9ecef;
+  flex-shrink: 0;
+}
+
+/* Main content */
+.main-content {
+  margin-top: 15px;
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}

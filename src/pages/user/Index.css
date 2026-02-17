@@ -1,0 +1,54 @@
+/* .layout {
+  display: flex;
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 70px;
+  width: 100%;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.shifted {
+  margin-left: 240px;
+} */
+
+
+.layout {
+  display: flex;
+}
+
+/* Main content */
+.main-content {
+  margin-top: 60px;   /* Header height */
+  margin-left: 70px;  /* Sidebar collapsed width */
+  width: calc(100% - 70px);
+  padding: 20px;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* Jab sidebar open ho */
+.main-content.shifted {
+  margin-left: 240px;
+  width: calc(100% - 240px);
+}
+
+/* Top bar (All Users + Button) */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Title */
+.page-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Button */
+.add-user-btn {
+  padding: 6px 14px;
+  font-weight: 500;
+}
