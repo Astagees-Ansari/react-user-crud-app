@@ -16,7 +16,6 @@ const DashboardLayout = () => {
     <div className="dashboard-wrapper">
 
       <Header toggleSidebar={toggleSidebar} />
-
       <div className="dashboard-body">
         <Sidebar isOpen={isSidebarOpen} />
         <div className={`main-content ${isSidebarOpen ? "shifted" : ""}`}>

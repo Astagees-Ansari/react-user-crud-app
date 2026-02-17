@@ -71,7 +71,7 @@ function EditUsers({
       <Form onSubmit={handleSubmit}>
         <Modal.Body>
           <Row>
-            <Col md={6}>
+            <Col md={6} className="mb-3">
             <Form.Group>
               <Form.Label>First Name</Form.Label>
               <Form.Control
@@ -87,7 +87,7 @@ function EditUsers({
               )}
             </Form.Group>
             </Col>
-            <Col md={6}>
+            <Col md={6} className="mb-3">
             <Form.Group>
                 <Form.Label>Last Name</Form.Label>
               <Form.Control
@@ -103,7 +103,7 @@ function EditUsers({
               )}
             </Form.Group>
             </Col>
-            <Col md={6}>
+            <Col md={6} className="mb-3">
             <Form.Group>
           <Form.Label>Phone</Form.Label>
               <Form.Control
@@ -127,7 +127,7 @@ function EditUsers({
               )}
             </Form.Group>
             </Col>
-             <Col md={6}>
+             <Col md={6} className="mb-3">
             <Form.Group>
                 <Form.Label>Email</Form.Label>
               <Form.Control

@@ -12,7 +12,7 @@ function AddUser({ show, handleClose, onSave, validation, setValidation }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!firstName.trim() || !lastName.trim() || phone.length !== 10 || !email.trim()) {
       setValidation({
         firstName: !firstName.trim(),
@@ -60,7 +60,7 @@ function AddUser({ show, handleClose, onSave, validation, setValidation }) {
       <Form onSubmit={handleSubmit}>
         <Modal.Body>
           <Row>
-            <Col md={6}>
+            <Col md={6} className="mb-3">
             <Form.Group>
              <Form.Label>First Name</Form.Label>
               <Form.Control
@@ -76,7 +76,7 @@ function AddUser({ show, handleClose, onSave, validation, setValidation }) {
               )}
             </Form.Group>
             </Col>
-             <Col md={6}>
+             <Col md={6} className="mb-3">
             <Form.Group>
   <Form.Label>Last Name</Form.Label>
               <Form.Control
@@ -92,7 +92,7 @@ function AddUser({ show, handleClose, onSave, validation, setValidation }) {
               )}
             </Form.Group>
             </Col>
-             <Col md={6}>
+             <Col md={6} className="mb-3">
             <Form.Group>
          <Form.Label>Phone</Form.Label>
               <Form.Control
@@ -114,7 +114,7 @@ function AddUser({ show, handleClose, onSave, validation, setValidation }) {
               )}
             </Form.Group>
             </Col>
-             <Col md={6}>
+             <Col md={6} className="mb-3">
             <Form.Group>
  <Form.Label>Email</Form.Label>
               <Form.Control
