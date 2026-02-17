@@ -7,8 +7,8 @@ The application is built with modular architecture, clean structure, protected r
 
 ## 🌐 Live Demo
 
-🔗 Live Application: https://your-deployment-link.vercel.app  
-🔗 GitHub Repository: https://github.com/your-username/react-crud-app  
+🔗 Live Application: https://react-user-crud-app-2lzw-py6alc5sw-astagees-ansaris-projects.vercel.app  
+🔗 GitHub Repository: https://github.com/Astagees-Ansari/react-user-crud-app.git
 
 ---
 
